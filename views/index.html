@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Index</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</head>
+
+<!--
+<style>
+body {
+    font: 400 15px Lato, sans-serif;
+    line-height: 1.8;
+    color: #818181;
+}
+
+.jumbotron {
+    background-color: #306399;
+    color: #fff;
+    padding: 100px 25px;
+}
+
+.container-fluid {
+    padding: 60px 50px;
+}
+
+
+.bg-grey {
+    background-color: #f6f6f6;
+}
+
+
+.navbar {
+    margin-bottom: 0;
+    background-color: #306399;
+    z-index: 9999;
+    border: 0;
+    border-radius: 0;
+}
+
+.navbar li a, .navbar .navbar-brand {
+    color: #fff !important;
+}
+
+.navbar-nav li a:hover, .navbar-nav li.active a {
+    color: #5590c6!important;
+    background-color: #fff !important;
+}
+
+.navbar-default .navbar-toggle {
+    border-color: transparent;
+    color: #fff !important;
+}
+</style> 
+ -->
+
+ <style>
+
+.jumbotron {
+  padding: 100px 25px;
+}
+</style>
+
+
+<body>
+<div>
+<div>
+	<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">Edward Sa</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href= "#">Home</a></li>
+      <li><a href=about>About Me</a></li>
+      <li><a href=resources>General CS61A Resources</a></li>
+      <li><a href=>Mentoring Section Notes</a></li>
+    </ul>
+  </div>
+</nav>
+</div>
+
+
+
+<div class="jumbotron text-center">
+  <h1>Welcome to My Tutoring Website for CS61A</h1>
+  <p>The Structure and Interpretation of Computer Programs</p> 
+</div>
+
+
+<div class="container-fluid bg-grey text-center">
+  <div class="row">
+    <div class="col-sm-4">
+      <h3>What This Is</h3>
+      <p> Whether you're prepping for a midterm, shadowing the course, or even just interested in computer science in general, this website represents the resources I found useful to learn the material in CS61A. </p>
+      
+    </div>
+    <div class="col-sm-4">
+      <h3>What This Has</h3>
+      <p>Click through the tabs on the top to access resources I have
+      created or gathered that will help prepare you for CS61A!</p>
+      <p>Excluding the worksheets I've made, a lot of these resources can be found via the CS61A website, but they may be organized in a way better suited for you!</p>
+    </div>
+    <div class="col-sm-4">
+      <h3>What You Get</h3> 
+      <p>CS61A is an extraordinary class and a great intro to programming. However, when I was taking the course, I noticed that a lot of my peers weren't aware of all the available resources on the material outside of the classroom. </p>
+      	<p>To master the material is to practice as much as you can, there aren't any shortcuts to it! The more you put into your introductory CS course, I think the better foundation you set for future courses in the subject. </p>
+      
+    </div>
+  </div>
+</div>
+<script>
+
+
+$(document).ready(function(){
+  // Add smooth scrolling to all links in navbar + footer link
+  $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+
+   // Make sure this.hash has a value before overriding default behavior
+  if (this.hash !== "") {
+
+    // Prevent default anchor click behavior
+    event.preventDefault();
+
+    // Store hash
+    var hash = this.hash;
+
+    // Using jQuery's animate() method to add smooth page scroll
+    // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area
+    $('html, body').animate({
+      scrollTop: $(hash).offset().top
+    }, 900, function(){
+
+      // Add hash (#) to URL when done scrolling (default click behavior)
+      window.location.hash = hash;
+      });
+    } // End if
+  });
+})
+</script>
+</body>
+</html>
